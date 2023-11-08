@@ -1,0 +1,26 @@
+begin
+ent a1 ;
+ent c1 ;
+ent b1 ;
+print :: 'Deseas ingresar calificaciones? 1=SI 0=NO' : ;
+entr a1 ;
+repet :: a1 == 1 :
+print :: 'Ingresa el total de alumnos' : ;
+entr b1 ;
+cicla :: a1 inicia 1 termina b1 ;
+print :: 'Ingresa tu calificacion' : ;
+entr c1 ;
+wi :: c1 <= 5 :
+print :: 'Tu calificacion es reprobatoria' : ;
+wo;
+wi :: c1 > 5 :
+print :: 'Tu calificacion es aprobatoria' : ;
+wo;
+wi :: c1 > 8 :
+print :: 'Tu calificacion es exelente' : ;
+wo;
+clo;
+print :: 'Deseas ingresar mas calificaciones? 1=SI 0=NO' : ;
+entr a1 ;
+rop;
+end
